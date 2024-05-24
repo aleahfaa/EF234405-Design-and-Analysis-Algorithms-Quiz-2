@@ -161,7 +161,7 @@ def move():
             return
     # check for food collision
     if snake.x == food.x and snake.y == food.y:
-        snakeBody.append(Tile(food.x, food.y))
+        snakeBody.append(Tile(snake.x, snake.y))  # Add a new segment immediately
         food.x = random.randint(1, column - 2) * tileSize
         food.y = random.randint(1, row - 2) * tileSize
         score += 1
@@ -189,11 +189,11 @@ def draw():
     draw_border()
     # draw food
     canvas.create_oval(food.x, food.y, food.x + tileSize, food.y + tileSize, fill='red')
-    # draw snake head
-    canvas.create_rectangle(snake.x, snake.y, snake.x + tileSize, snake.y + tileSize, fill='yellow')
     # draw snake body
     for tile in snakeBody:
         canvas.create_rectangle(tile.x, tile.y, tile.x + tileSize, tile.y + tileSize, fill='lime green')
+    # draw snake head
+    canvas.create_rectangle(snake.x, snake.y, snake.x + tileSize, snake.y + tileSize, fill='yellow')
     # display score and game over message
     if gameOver:
         highest_score = get_highest_score()
