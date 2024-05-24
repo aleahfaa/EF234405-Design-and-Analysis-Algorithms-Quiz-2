@@ -43,7 +43,6 @@ This repository contains a Snake game implemented using `tkinter` for graphics a
 - [Usage](#usage)
 - [Game Mechanics](#game-mechanics)
 - [Algorithms Used](#algorithms-used)
-- [Documentation](#documentation)
 
 ## Features
 - Interactive graphical interface using `tkinter`
@@ -107,8 +106,3 @@ The main loop initializes the game, sets up the window, and handles the drawing 
 
 ### A* Pathfinding
 The `a_star` function calculates the shortest path from the snake to the food using the A* algorithm.
-
-
-## Documentation
-![2 (2)](https://github.com/aleahfaa/EF234405-Design-and-Analysis-Algorithms-Quiz-2/assets/112534174/67a12e2a-8b9b-4e69-8f85-2eaf2d7379c8)
-![3 (2)](https://github.com/aleahfaa/EF234405-Design-and-Analysis-Algorithms-Quiz-2/assets/112534174/7a3995a1-5d9c-4c06-b023-e209c0db7de3)
